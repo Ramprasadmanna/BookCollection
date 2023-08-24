@@ -4,11 +4,13 @@ window.onload = function () {
   const popUp = document.querySelector('.about-WebApp');
   const resetButton = document.querySelector('.reset');
   const loading = document.querySelector('.loading');
+  const actions = document.querySelector(".actions");
 
   function loadBooks() {
     if (localStorage.getItem('book')) {
 
       popUp.style.display = 'none';
+      actions.style.display='grid';
       resetButton.style.display = 'block';
       collections.style.display = 'none';
       loading.style.display = 'block';
@@ -79,6 +81,7 @@ window.onload = function () {
     else {
       collections.innerHTML = "";
       popUp.style.display = 'block';
+      actions.style.display='block';
       resetButton.style.display = 'none';
     }
 
