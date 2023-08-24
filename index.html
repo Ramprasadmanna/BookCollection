@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Web Page Name -->
+  <title>Book Collection</title>
+  <meta property="og:title" content="SpeedLight Technologies - Smart Digital Solutions" />
+
+  <!-- Web Page Dscription -->
+  <meta name="description"
+    content="The Book Collection web app is a simple yet effective tool designed to help users keep track of books they wish to buy. It enables users to store relevant details about books they come across, ensuring they don't forget about their interests. The app is developed using HTML, CSS, and JavaScript.">
+
+  <meta name="og:description"
+    content="The Book Collection web app is a simple yet effective tool designed to help users keep track of books they wish to buy. It enables users to store relevant details about books they come across, ensuring they don't forget about their interests. The app is developed using HTML, CSS, and JavaScript.">
+
+  <!-- Web Page Image -->
+  <meta property="og:image:secure_url" content="Images/Book-Logo.png" />
+  <meta property="og:image" content="Images/Book-Logo.png" />
+  <meta property="og:image:type" content="png" />
+
+  <!-- Web Page KeyWords -->
+  <meta name="keywords"
+    content="book,bookcollection ,book collection app, Web Design, Web Development,html,css,ramprasadmanna,js">
+
+  <!-- Web Page Author -->
+  <meta name="author" content="Ramprasad Manna">
+  <meta property="profile:username" content="Ramprasad Manna" />
+
+  <!-- Web Page URL -->
+  <!-- <meta property="og:url" content="https://speedlighttechnologies.netlify.app/" /> -->
+
+  <!-- FavIcon -->
+  <link rel="shortcut icon" href="Images/Book-Logo.png" type="image/x-icon">
+
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="heading">
+      <h1>Book Collection</h1>
+      <a href="https://github.com/Ramprasadmanna">
+        <p> &copy; Ramprasad Manna</p>
+      </a>
+    </div>
+
+    <div class="form">
+      <form action="" class="form-container" id="New-Form" name="Add-Book">
+        <h3 class="form-name">Enter Book Details</h3>
+        <i class='bx bx-x-circle cross-icon'></i>
+        <div>
+          <input type="file" name="Image" accept="image/png, image/jpeg">
+          <small class="input-Info">Upload Image Less Than 100kb</small>
+        </div>
+        <input type="text" placeholder="Title" name="Title">
+        <input type="text" placeholder="Author" name="Author">
+        <div>
+          <input type="text" placeholder="Source" name="Source">
+          <small class="input-Info">Ex. Instagram, Youtube...</small>
+        </div>
+
+        <div class="option">
+          <input type="radio" name="Buy" id="Add-Book-Bought">
+          <label for="Add-Book-Bought">Bought</label>
+          <input type="radio" name="Buy" id="Add-Book-Not-Bought" checked>
+          <label for="Add-Book-Not-Bought">Not-Bought</label>
+        </div>
+
+        <div class="if-Bought">
+          <input type="number" placeholder="Price" name="Price">
+          <small class="input-Info">Purchase Price</small>
+        </div>
+
+        <div class="if-Bought">
+          <input type="date" placeholder="Purchase Date" name="purchaseDate">
+          <small class="input-Info">Purchase Date</small>
+        </div>
+
+        <button>Add Book</button>
+      </form>
+
+      <form action="" class="form-container" id="Edit-Form" name="Edit-Book">
+        <h3 class="form-name">Edit Book Details</h3>
+        <i class='bx bx-x-circle cross-icon'></i>
+        <div>
+          <input type="file" name="Image" accept="image/png, image/jpeg">
+          <small class="input-Info">Upload Image Less Than 100kb</small>
+        </div>
+        <input type="text" placeholder="Title" name="Title">
+        <input type="text" placeholder="Author" name="Author">
+        <div>
+          <input type="text" placeholder="Source" name="Source">
+          <small class="input-Info">Ex. Instagram, Youtube...</small>
+        </div>
+
+        <div class="option">
+          <input type="radio" name="Buy" id="Edit-Book-Bought">
+          <label for="Edit-Book-Bought">Bought</label>
+          <input type="radio" name="Buy" id="Edit-Book-Not-Bought">
+          <label for="Edit-Book-Not-Bought">Not-Bought</label>
+        </div>
+
+        <div class="if-Bought">
+          <input type="number" placeholder="Price" name="Price">
+          <small class="input-Info">Purchase Price</small>
+        </div>
+
+        <div class="if-Bought">
+          <input type="date" placeholder="Purchase Date" name="purchaseDate">
+          <small class="input-Info">Purchase Date</small>
+        </div>
+
+        <button>Edit Book</button>
+      </form>
+    </div>
+
+    <div class="container">
+
+      <div class="actions">
+        <button class="button add-Book">
+          Add Book
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="book-icon">
+            <path
+              d="M21 3h-7a2.98 2.98 0 0 0-2 .78A2.98 2.98 0 0 0 10 3H3a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1h5.758c.526 0 1.042.214 1.414.586l1.121 1.121c.009.009.021.012.03.021.086.079.182.149.294.196h.002a.996.996 0 0 0 .762 0h.002c.112-.047.208-.117.294-.196.009-.009.021-.012.03-.021l1.121-1.121A2.015 2.015 0 0 1 15.242 20H21a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.758 18H4V5h6c.552 0 1 .449 1 1v12.689A4.032 4.032 0 0 0 8.758 18zM20 18h-4.758c-.799 0-1.584.246-2.242.689V6c0-.551.448-1 1-1h6v13z">
+            </path>
+          </svg>
+        </button>
+        <button class="button reset">Reset</button>
+      </div>
+
+      <div class="about-WebApp">
+        <p class="webapp-Heading">About Book Collection Web App</p>
+        <p class="webapp-Details">Welcome to the "Book Collection" Web App - your personal tool
+          for keeping track of
+          the
+          books you want to buy! This web app is designed to help you remember and organize details about books that
+          you
+          come across and wish to purchase in the future.
+          Whether it's a recommendation from a YouTube video or any
+          other source, you can easily note down the book's information for future reference.
+        </p>
+        <p class="webapp-Details">Start adding Book details by clicking on the "Add Book" Button.</p>
+        <a href="">
+          <p class="link">Click here to read Full Documentation.</p>
+        </a>
+      </div>
+
+      <div class="loading">
+        <i class='bx bx-loader-circle bx-spin bx-rotate-180'></i>
+      </div>
+
+      <div class="collections">
+      </div>
+    </div>
+  </div>
+
+  <!-- Js Script -->
+  <script src="index.js"></script>
+</body>
+
+</html>
