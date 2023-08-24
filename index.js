@@ -294,7 +294,6 @@ window.onload = function () {
   function submitData(image, name, author, source, boughtStatus, price, purchaseDate, todaysDate) {
     // For Old User
     if (localStorage.getItem('book')) {
-      console.log('this');
       var oldData = JSON.parse(localStorage.getItem('book'));
 
       var newData =
@@ -540,7 +539,6 @@ window.onload = function () {
     }
 
     else {
-      console.log("nhi hai");
       image = false;
     }
 
